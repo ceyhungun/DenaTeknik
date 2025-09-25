@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.banner {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  padding: 30px 10px;
+  background: #f8f9fa; /* açık gri arka plan */
+  margin-top: 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  z-index: 1;
+  border-top: 2px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+footer .fcontainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 15px;
+  padding: 0;
+}
+
+.logo {
+  grid-column: 1 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 40px;
+}
+
+/* .footer-logo {
+  width: 220px;
+  height: auto;
+} */
+
+
+.footer-logo {
+  max-width: 400px; /* isteğe göre küçült/büyüt */
+}
+
+.logo-with-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+footer .aboutus {
+  grid-column: 2 / 3;
+  padding-left: 15px;
+}
+
+footer .contact {
+  grid-column: 4 / 5;
+  padding-right: 15px;
+}
+
+footer .fcontainer .fsec h2 {
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+footer .fcontainer .fsec p {
+  color: #555;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+footer .fcontainer .fsci {
+  margin-top: 15px;
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+footer .fcontainer .fsci li a {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  background: #333;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+footer .fcontainer .fsci li a:hover {
+  background-color: #007BFF; /* hover rengi */
+  transform: scale(1.1); /* hafif büyüme */
+}
+
+footer .fcontainer .fcontact .finfo li {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  margin-bottom: 10px;
+}
+
+footer .fcontainer .fcontact .finfo li span {
+  color: #555;
+  font-size: 18px;
+}
+
+footer .fcontainer .fcontact .finfo li a {
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease; /* hover için geçiş efekti */
+}
+
+footer .fcontainer .fcontact .finfo li a:hover {
+  color: #007BFF; /* hover rengi */
+}
+
+.contact-link {
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #007BFF; /* hover rengi */
+}
+
+.ficon {
+  font-size: 18px;
+  color: #fff;
+}
+
+.finfo {
+  list-style: none;
+  padding: 0;
+}
+
+.finfo li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.finfo .ficon {
+  font-size: 18px;
+  color: #333;
+  margin-right: 8px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  footer .fcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+  }
+
+  footer .fsec {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  footer .logo {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .footer-logo {
+    width: 160px;
+  }
+}
+
+.footer-bottom {
+  margin-top: 25px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-line {
+  border: none;
+  border-top: 1px solid #ccc;  
+  margin: 0;
+  width: 100vw;                
+}
+
+.copyright {
+  color: #222;               
+  font-size: 14px;             
+  font-weight: 400;            
+  margin: 10px 0 0 0;
+}
+
+
+.company-name {
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+}

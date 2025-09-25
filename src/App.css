@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; 
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 100px; 
+}
+
+:root {
+  --body-color: #e4e9f7;
+  --sidebar-color: #fff;
+  --primary-color: #695cfe;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #707070;
+
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+.lsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.form-box {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h2 {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+.inputbox {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 2px solid #fff;
+}
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+}
+input:focus ~ label,
+input:valid ~ label {
+  top: -5px;
+}
+.inputbox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0;
+  color: #fff;
+}
+.inputbox ion-icon {
+  position: absolute;
+  right: 8px;
+  color: #fff;
+  font-size: 1.2em;
+  top: 20px;
+}
+.forget {
+  margin: -15px 0 15px;
+  font-size: 0.9em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.forget label input {
+  margin-right: 3px;
+}
+.forget label a {
+  color: #fff;
+  text-decoration: none;
+}
+.forget label a:hover {
+  text-decoration: underline;
+}
+button {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+}
+.register {
+  font-size: 0.9em;
+  color: #fff;
+  text-align: center;
+  margin: 20px 0 10px;
+}
+.register p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+.register p a:hover {
+  text-decoration: underline;
+}
+
+.login {
+  height: 100vh;
+  background: var(--body-color);
+  transition: var(--tran-05);
+}
+
+.login.dark {
+  --body-color: #18191a;
+  --sidebar-color: #242526;
+  --primary-color: #3a3b3c;
+  --primary-color-light: #3a3b3c;
+  --toggle-color: #fff;
+  --text-color: #ccc;
+}
+
+/* Header deneme */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+
+
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+
+header {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: rgba(36, 37, 42, 0.4); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+
+}
+
+.logo {
+  width: 400px;
+  margin-top: -10px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links a:hover {
+  color: #0088a9;
+}
+
+button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+.cta {
+  margin-right: 2.5rem;
+}
+
+
+@media(min-aspect-ratio:16/9){
+  .banner video{
+      width: 100%;
+      /* height: auto; */
+      height: 100%;
+      object-fit: cover; /* Video ekranı güzel kaplasın */
+      display: block;
+  }
+}
+
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+  background-position: center;
+  background-size: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.home {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.headerContainer {
+  width: auto;
+  margin-left: 50px;
+  
+}
+
+.headerContainer h1 {
+  justify-content: center;
+  align-items: center;
+  font-size: 0px;
+  height: 60vh;
+  font-weight: 50;
+  color: black;
+}
+
+.headerContainer p {
+  padding: 0;
+  font-size: 40px;
+  font-weight: lighter;
+  color: black;
+}
+
+@media only screen and (max-width: 650px) {
+  .home {
+    justify-content: center;
+    align-items: center;
+  }
+  .headerContainer h1 {
+    font-size: 40px;
+    height: 30px;
+    color: white;
+  }
+  .headerContainer p {
+    font-size: 30px;
+    color: white;
+  }
+}
+
+
+
+.content{
+  width: 100%;
+  position: absolute;
+  color:rgb(255, 255, 255);
+  top:45%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.content h1{
+  margin-top: 80px;
+  font-size: 90px;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.p {
+  margin-top: 0;
+  color: #000000;
+}
+
+section {
+  padding-top: 60px; 
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease forwards;
+}
+
